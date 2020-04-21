@@ -137,7 +137,7 @@ function getCountryWins(list,teamInitial) {
         let total=0;
        if(team["Home Team Initials"]===teamInitial && team["Home Team Goals"]>team["Away Team Goals"]){
     
-            total=total+1
+            total=total+1;
      }
     else if(team["Away Team Initials"]===teamInitial && team["Home Team Goals"]<team["Away Team Goals"]){
           total=total+1;
@@ -150,57 +150,9 @@ function getCountryWins(list,teamInitial) {
 console.log("task 7")
 console.log("Brazil's total win is "+getCountryWins(fifaData,'BRA'));
 
-
-
-/* Task 8: Write a function called getGoals() that accepts a parameter `data` and 
-returns the team with the most goals score per appearance (average goals for) in the World Cup finals */
-
-function getGoals(list) {
-
-    /*const  list2=(getFinals(fifaData));
-
-    const teams=[];
-    list2.forEach(function(team){
-
-       / obj1={
-            team:team["Home Team Name"],
-            goal:team["Home Team Goal"],
-            apperance:1,
-        }
-
-        obj2={
-            team:team["Away Team Name"],
-            goal:team["Away Team Goal"],
-            apperance:1,
-        }
-        teams.push(obj1);
-        teams.push(obj2);
-
-    })
-
-   for(let i=0;i<team.length;i++){
-    
-   }*/
-};
-
-getGoals();
-
-
-/* Task 9: Write a function called badDefense() that accepts a parameter `data` and
- calculates the team with the most goals scored against them per appearance (average goals against)
-  in the World Cup finals */
-
-function badDefense(list) {
-
-    const  list2=(getFinals(fifaData));
-
-};
-
-badDefense();
-
-
 /* Task 10: Write a function called `getAverageGoals` that accepts a parameter `data` and returns 
-the the average number of home team goals and away team goals scored per match (Hint: use .reduce and do this in 2 steps) */
+the the average number of home team goals and away team goals scored per match
+ (Hint: use .reduce and do this in 2 steps) */
 
 function getAverageGoals(data) {
  
